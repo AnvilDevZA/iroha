@@ -1,4 +1,6 @@
 //! This module contains structures and implementations related to the cryptographic parts of the Iroha.
+extern crate alloc;
+
 #![cfg_attr(not(feature = "std"), no_std)]
 
 #[cfg(not(feature = "std"))]
@@ -368,7 +370,7 @@ impl PublicKeyInner {
 /// See https://github.com/hyperledger-iroha/iroha/issues/5038 for details.
 #[cfg(target_family = "wasm")]
 mod lazy {
-    use alloc::{boxed::Box, vec::Vec};
+    use alloc::{boxed::Box, vec::Vec}; // This line will now resolve `alloc`
     use core::{borrow::Borrow, cell::OnceCell};
 
     use crate::{Algorithm, PublicKeyInner};

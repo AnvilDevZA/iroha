@@ -1,0 +1,11 @@
+chain = "00000000-0000-0000-0000-000000000000"
+torii_url = "http://127.0.0.1:8080/"
+
+[basic_auth]
+web_login = "mad_hatter"
+password = "ilovetea"
+
+[account]
+domain = "coin_afriq"
+public_key = "ed012040B5C43FFBA71E01276221C77D47C0E7CF4A7F1C1D0C156CB30E7586C8C5DC86"
+private_key = "8026202F294267A8B7E655730308192781DEDCE7A8324DE34A12C631BBE2E84EEE7695"
