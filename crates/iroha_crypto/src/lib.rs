@@ -1,4 +1,6 @@
 //! This module contains structures and implementations related to the cryptographic parts of the Iroha.
+  |
+#[cfg_attr(not(feature = "std"), no_std)] 
 extern crate alloc;
 
 #[cfg_attr(not(feature = "std"), no_std)]
