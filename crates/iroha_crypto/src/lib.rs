@@ -1,10 +1,7 @@
 //! This module contains structures and implementations related to the cryptographic parts of the Iroha.
 extern crate alloc;
 
-#![cfg_attr(not(feature = "std"), no_std)]
-
-#[cfg(not(feature = "std"))]
-extern crate alloc;
+#[cfg_attr(not(feature = "std"), no_std)]
 
 #[cfg(not(feature = "ffi_import"))]
 pub mod encryption;
